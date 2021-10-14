@@ -10,7 +10,7 @@ export default function SignIn(){
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
-    const isInvalid = username ==='' | password === '' | email === '';
+    const isInvalid = username ==='' || password === '' || email === '';
 
     const handleSignup = (event) => {
         event.preventDefault()
@@ -31,7 +31,7 @@ export default function SignIn(){
                     onChange = {(event) => setUserName(event.target.value) }
                 />
                 <Form.Input 
-                    placeholder = 'Email or phone number '
+                    placeholder = 'Email address'
                     value = {email}
                     onChange = {(event) => setEmail(event.target.value) }
                 />

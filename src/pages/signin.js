@@ -9,7 +9,7 @@ export default function SignIn(){
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
-    const isInvalid = password === '' | email === '';
+    const isInvalid = password === '' || email === '';
 
     const handleSignin = (event) => {
         event.preventDefault()
