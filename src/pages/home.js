@@ -4,7 +4,7 @@ import AccordionContainer from '../containers/accordion';
 import  HeaderContainer from '../containers/header';
 import {OptForm, Feature} from '../components';
 
-export function Home(){
+export default function Home(){
     return (
         <>
             <HeaderContainer>                
