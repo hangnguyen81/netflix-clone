@@ -21,7 +21,7 @@ const firebase = window.firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <>
-    <FirebaseContext.Provider value={{firebase: window.firebase}}>
+    <FirebaseContext.Provider value={{firebase}}>
       <GlobalStyles/>
       <App />
     </FirebaseContext.Provider>  

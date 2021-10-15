@@ -1,7 +1,7 @@
 import { Header, Profiles } from '../components';
 import * as ROUTES from '../constants/routes';
 
-export function SelectProfileContainer() {
+export function SelectProfileContainer({user, setProfile}) {
     return (
         <>
             <Header bg={false}>
